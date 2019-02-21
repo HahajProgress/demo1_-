@@ -1,0 +1,66 @@
+body,html{margin 0;padding 0;}
+     ul{
+            list-style-typenone;
+            text-aligncenter;
+            font-size14px;
+            
+        }
+        li{
+            floatleft;改?的地方
+            width13%;
+            padding15px;
+            min-width 100px;
+           
+        }
+        .hd_contant{width 40px;min-width 30px;}
+        alink,avisited,aactive{
+            colorrgb(230, 230, 230);
+            text-decorationnone;
+            font-family Verdana;
+            font-size 16px;
+            font-weight 500;
+        }
+        ahover{color white;font-weight 700;transform rotatey(30deg);transition-duration 0.3s;}
+        a{
+            displayblock;整体??可???域，而不只是字
+        }
+        #wapper{width 100%;height 80px;background #000000a8; position fixed;z-index 999;}
+        #hd_menu{floatright;width 60%}
+        #hd_logo{position absolute;top 10px;left 10px; width 60px;display block;}
+        #hd_logo1{position absolute;top 10px;left 10px; width 60px;display none;}
+        .main_img{width 50%;floatleft;}
+        .main_img img{height 100vh!important;}
+        #small_hd_meun{background #000000a6;width 50%; height 100vh;display none;}
+        #small_hd_meun li{float none;margin 0 auto;}
+        #small_hd_meun li a{font-size 18px;}
+        #small_hd_meun ul{padding70px 0px;}
+        #small_hd_meun .hd_contant{width 10px;padding 0px;margin 0;float left;min-width 33%;text-align center;}
+        #content{width 100%;}
+        #con_word1{position absolute;top 30%;left 10%;}
+        #con_word2{position absolute;top 50%;right 10%;}
+        footer{position fixed;bottom 0; font-family Verdana;font-weight 500;color white;width 100%;text-align right;padding 10px;}
+        @media only screen and (min-width 1120px) {
+            #hd_menu{width 69%}
+        }
+        @media only screen and (min-width 1024px) {
+            #hd_menu{width 76%}
+            #li_space{min-width40px;}
+        }
+        @media only screen and (max-width 1024px) {
+            #hd_menu{width 95%}
+            #li_space{min-width0;width 0px;}
+            .main_img{width 100%;}
+            
+        }
+        @media only screen and (min-width 768px) {
+            
+            #small_hd_meun{display none;}
+        }
+        @media only screen and (max-width 768px) {
+           #hd_menu{display none;}
+           #wapper{background none;}
+           #hd_logo{display none;}
+           #hd_logo1{display block;}
+           #small_hd_meun{display block;}
+           
+        }

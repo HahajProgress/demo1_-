@@ -1,0 +1,9 @@
+<iframe id="mainframe" name="mainframe"src="shadow/index.html" width="100%" marginwidth="0" marginheight="0" scrolling="No" frameborder="0"></iframe>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function()
+        {
+            parent.document.getElementById('mainframe').style.height = 100+'vh';
+            parent.document.getElementById('mainframe').style.width = document.body.clientWidth+'px';
+        };
+        </script>

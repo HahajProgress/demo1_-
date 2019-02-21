@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>藝街機StreetArtJ</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="image/favicon.ico" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="css/tranScss.css">
+ <style>
+     #wapper{position: fixed;}
+ </style>
+</head>
+<body>
+    <header> 
+    <div id="wapper">    
+        <div>
+            <a id="hd_logo" href="index.html"><image src="image/hd_icon.png" width="100%"></a>
+            <a id="hd_logo1" href="javascript:void(0);"><image src="image/hd_icon.png" width="100%"></a>
+        </div>
+        <script>
+       $(document).ready(function(){
+            $("#hd_logo1").click(function(){
+            $('#small_hd_meun').toggle(1000);
+            });
+
+            $('#main').click(function() {
+                $('#small_hd_meun').hide(1000);
+            })
+        });
+
+        </script>
+        <div id="small_hd_meun">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="li_space"></li>
+            
+            <li class="hd_contant"><a href="#"><image src="image/fb_icon.png" width="25px"></a></li>
+            <li class="hd_contant"><a href="#"><image src="image/line_icon.png"width="25px"></a></li>
+            <li class="hd_contant"><a href="#"><image src="image/ig_icon.png"width="25px"></a></li>
+            </ul>
+        </div>
+        <div id="hd_menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            <li id="li_space"></li>
+            
+            <li class="hd_contant"><a href="#"><image src="image/fb_icon.png" width="25px"></a></li>
+            <li class="hd_contant"><a href="#"><image src="image/line_icon.png"width="25px"></a></li>
+            <li class="hd_contant"><a href="#"><image src="image/ig_icon.png"width="25px"></a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>    
+</header>
+        <div  class="" id="main">
+            <div class="main_img">
+                <image src="image/main_left.jpg" width="100%";>
+            </div> 
+            <div class="main_img">    
+                <image  src="image/main_right.jpg" width="100%";>
+            </div>    
+        </div>
+        <div id="content">
+            <div id="con_word1">
+            <img src="image/index_word1.png">
+            </div>
+            <div id="con_word2">
+            <img src="image/index_word.png">
+            </div>
+        </div>
+    <footer>
+            <P>Copyright©2019 By HahaJ</P>
+    </footer>
+   
+</body>
+</html>
+
